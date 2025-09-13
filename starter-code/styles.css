@@ -20,7 +20,8 @@
 
 /* || Main Styling */
 
-body {
+header,
+main {
   padding: 1rem 1.25rem;
 }
 
@@ -95,4 +96,99 @@ header {
 .hero-image-container {
   display: flex;
   justify-content: center;
+}
+
+/* Content Section */
+
+.content-grid-content {
+  display: grid;
+  gap: 3rem;
+  grid-template: 1fr / 1fr;
+  margin-bottom: 5rem;
+}
+
+.content-header {
+  background: var(--Gradient-Pink);
+  border-radius: 0.9rem;
+  color: var(--White);
+  padding: 2rem;
+}
+
+.card {
+  box-shadow: 0 1rem 1.5rem #d7d7d7;
+  border-radius: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 25rem;
+  position: relative;
+}
+
+.card-img {
+  top: 1rem;
+  left: 2rem;
+  margin-bottom: 1rem;
+  position: absolute;
+}
+
+.card-text-container {
+  margin-top: 5rem;
+  padding: 2rem;
+}
+
+.card-header {
+  color: var(--Blue-900);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-text {
+  color: var(--Grey);
+  font-weight: bold;
+  line-height: 150%;
+  margin-bottom: 1.5rem;
+}
+
+.card-link {
+  color: var(--Pink-600);
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.card-link:hover {
+  color: var(--Pink-300);
+}
+
+/* Footer */
+
+footer {
+  align-items: center;
+  background-color: var(--Blue-900);
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.footer-logo {
+  height: auto;
+  width: 5rem;
+}
+
+.footer-btn {
+  background: var(--Gradient-Purple);
+  border: none;
+  border-radius: 1.75rem;
+  color: var(--White);
+  cursor: pointer;
+  font-weight: bold;
+  opacity: 1;
+  padding: 1rem 2rem;
+  transition: background-color 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+
+.footer-btn:hover {
+  background: none;
+  background-color: var(--Pink-300);
 }
