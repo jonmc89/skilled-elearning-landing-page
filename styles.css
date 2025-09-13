@@ -226,6 +226,10 @@ footer {
     display: none;
   }
 
+  .hero-image-desktop {
+    display: none;
+  }
+
   .tablet-image-wrapper {
     display: block;
     position: relative;
