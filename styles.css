@@ -12,6 +12,7 @@
   --pink-600: hsl(341, 92%, 62%);
   --pink-300: hsl(341, 100%, 83%);
   --grey: hsl(232, 10%, 56%);
+  --light-grey: hsl(233, 15%, 90%);
   --white: hsl(0, 0%, 100%);
   --gradient-pink: linear-gradient(hsl(322, 87%, 55%), hsl(13, 100%, 65%));
   --gradient-purple: linear-gradient(hsl(237, 100%, 64%), hsl(322, 87%, 55%));
@@ -131,4 +132,56 @@ header {
   background-size: cover;
   width: 100%;
   height: 20rem;
+}
+
+/* Content Section */
+
+.content-header {
+  border-radius: 0.9375rem;
+  background: var(--gradient-pink);
+  padding: 2rem;
+  color: var(--white);
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 1.25rem;
+}
+
+.content-article {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  box-shadow: 0 2rem 2rem var(--light-grey);
+  border-radius: 0.9375rem;
+  padding: 6rem 2rem 2.5rem 2rem;
+
+  h3 {
+    color: var(--blue-900);
+    font-weight: 800;
+    font-size: 1.25rem;
+  }
+
+  p {
+    width: 20ch;
+    color: var(--grey);
+    line-height: 150%;
+  }
+
+  a {
+    color: var(--pink-600);
+    font-weight: 700;
+    font-size: 1.125rem;
+    text-decoration: none;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 2rem;
+  }
 }
