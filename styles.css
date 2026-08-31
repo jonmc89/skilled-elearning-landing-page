@@ -47,6 +47,7 @@
 
 body,
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -69,6 +70,7 @@ header {
   }
 
   button {
+    z-index: 99;
     transition: opacity 0.2s ease-in-out;
     cursor: pointer;
     border: none;
@@ -91,6 +93,9 @@ header {
 /* Hero Section */
 
 .hero-section {
+  display: flex;
+  position: relative;
+  flex-direction: column;
   padding: 4rem 1.25rem;
 
   h1 {
@@ -125,11 +130,12 @@ header {
   }
 }
 
-.hero-img-container {
-  background-image: url(./assets/image-hero-mobile.webp);
-  background-size: cover;
-  width: 100%;
-  height: 20rem;
+.hero-img-mobile {
+  align-self: center;
+}
+
+.hero-img-tablet {
+  display: none;
 }
 
 /* Content Section */
@@ -213,5 +219,46 @@ footer {
 
   button:hover {
     opacity: 0.7;
+  }
+}
+
+@media screen and (min-width: 51.25rem) {
+  header {
+    z-index: 99;
+  }
+
+  .hero-section {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4rem 2.75rem;
+
+    p {
+      width: 25ch;
+    }
+  }
+
+  .hero-img-mobile {
+    display: none;
+  }
+
+  .hero-img-tablet {
+    display: block;
+    position: absolute;
+    top: -10rem;
+    right: -18rem;
+  }
+
+  .content-section {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 2rem;
+    padding: 4rem 2.75rem 9rem 2.75rem;
+  }
+
+  footer {
+    padding: 1.5rem 2.75rem;
   }
 }
