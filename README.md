@@ -44,4 +44,4 @@ Users should be able to:
 
 - Website - [JMWebDev](https://jonmckenziewebdev.co.uk)
 - Frontend Mentor - [@jonmc89](https://www.frontendmentor.io/profile/jonmc89)
-- GutHub - [@jonmc89](https://github.com/jonmc89)
+- GitHub - [@jonmc89](https://github.com/jonmc89)
